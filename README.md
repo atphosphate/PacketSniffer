@@ -52,7 +52,7 @@ pip install scapy
 ## 📖 Usage
 To capture packets, simply execute the script with administrative privileges:
 ```bash
-sudo python packetsniffer.py
+sudo python packetsniffer.py -i <interface>
 ```
 
 The script will start sniffing packets and display relevant information about each captured packet in real-time.
@@ -61,14 +61,9 @@ The script will start sniffing packets and display relevant information about ea
 
 ## 🔍 Example Output
 ```bash
-[*] Captured Packet: Source: 192.168.1.1 -> Destination: 192.168.1.100
-[*] Packet Details: Protocol: TCP, Port: 443
-[*] Captured Packet: Source: 192.168.1.100 -> Destination: 192.168.1.1
-[*] Packet Details: Protocol: UDP, Port: 53
+[*] b'username=testtest&password=asdf
 ...
 ```
-
-Captured packets will display source and destination IPs, protocol details, and other basic information depending on how your script parses packet data.
 
 ---
 
